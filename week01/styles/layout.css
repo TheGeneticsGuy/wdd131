@@ -1,0 +1,28 @@
+/* WDD 131 main site */
+
+body {
+    display: grid;
+}
+
+nav {
+    display: flex;
+    background-color: steelblue;
+    padding: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* VERY BOTTOM */
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid #000;
+    text-align: center;
+}
