@@ -2,6 +2,21 @@
 
 body {
     display: grid;
+    height: 20vh;
+    align-items: center;
+}
+
+.headerContent {
+    background-color: lightblue;
+    margin: 0;
+    height: 125px;
+}
+
+.headerContent p {
+    color: white;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 nav {
@@ -10,6 +25,7 @@ nav {
     padding: 1rem;
     justify-content: space-evenly;
     align-items: center;
+    height: 30px;
 }
 
 nav a {
@@ -20,9 +36,38 @@ nav a {
     font-weight: 700;
 }
 
+.gridContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 20vh;
+}
+
+main {
+    background-color: gray;
+}
+
+body h2 {
+    padding: 0.5rem;
+}
+
+aside {
+    background-color: lightgray;
+}
+
+
+
 /* VERY BOTTOM */
+
 footer {
-    margin-top: 1rem;
+    background-color: steelblue;
+    /* margin-top: 1rem; */
     border-top: 1px solid #000;
+    height: 150px;
+}
+
+footer p {
     text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
 }
