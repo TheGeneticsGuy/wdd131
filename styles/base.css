@@ -1,0 +1,140 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+:root {
+    --primary-color: lightblue;
+    --secondary-color: black;
+    --accent1-color: #FEFAE0;
+    --accent2-color: #DDA15E;
+    --heading-font: 'PT Serif', serif;
+    --paragraph-font: 'PT Serif', serif;
+
+    --nav-background-color: #DDA15E;
+    --nav-link-color: #283618;
+    --nav-hover-link-color: #283618;
+    --nav-hover-background-color: #FEFAE0;
+}
+
+body {
+    max-width: 90vw;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    background-color: var(--nav-background-color);
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: black;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.card {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-bottom: 1px solid lightgray;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.topSec,
+.bottomSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.leftColumn img {
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 1rem;
+}
+
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.rightColumn ul {
+    margin: auto 0;
+}
+
+footer {
+    background: var(--primary-color);
+    padding-bottom: 0rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.modified {
+    color: rgb(134, 71, 71);
+}
