@@ -1,75 +1,95 @@
-/* WDD 131 main site */
+/* CORE BODY FRAMEWORK */
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
 
 body {
     display: grid;
-    height: 20vh;
-    align-items: center;
+    height: 40vh;
+    grid-template: auto 1fr auto / 0fr 1fr 0.5fr auto;
+    max-width: 90vw;
 }
 
-.headerContent {
-    background-color: lightblue;
-    margin: 0;
-    height: 125px;
-}
-
-.headerContent p {
-    color: white;
-    padding: 0.5rem;
-    font-size: 1.5rem;
+body h2 {
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
-nav {
-    display: flex;
-    background-color: steelblue;
-    padding: 1rem;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 30px;
+header {
+    background: lightblue;
+    grid-column: 1 / 4;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem;
-    font-size: 1.5rem;
+header h1 {
+    font-size: 1.2rem;
     font-weight: 700;
-}
-
-.gridContent {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    height: 20vh;
 }
 
 main {
-    background-color: gray;
-}
-
-body p {
-    padding: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 700;
+    background: tan;
+    grid-column: 2 / 3;
 }
 
 aside {
-    background-color: lightgray;
+    background: white;
+    grid-column: 3 / 4;
 }
 
-
-
-/* VERY BOTTOM */
+main,
+aside {
+    padding: 1rem;
+}
 
 footer {
-    background-color: steelblue;
-    /* margin-top: 1rem; */
-    border-top: 1px solid #000;
-    height: 150px;
+    background: lightblue;
+    padding-bottom: 4rem;
+    text-align: center;
+    grid-column: 1 / 4;
 }
 
 footer p {
-    text-align: center;
-    font-size: 1.5rem;
-    color: white;
+    font-size: 1.2rem;
     font-weight: 700;
 }
+
+
+/* END CORE BODY FRAMEWORK */
+
+/*NAV BAR */
+
+.navigation {
+    list-style: none;
+    display: flex;
+    background-color: #333;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    color: #eee;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* End Nav Bar */
