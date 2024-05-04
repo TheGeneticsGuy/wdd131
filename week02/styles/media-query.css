@@ -1,0 +1,31 @@
+:root {
+    --body-font: 'Roboto', sans-serif;
+
+    --primary-color: lightblue;
+    --secondary-color: white;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
