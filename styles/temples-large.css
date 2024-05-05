@@ -1,0 +1,47 @@
+@media screen and (min-width: 700px) {
+    body {
+        width: 100%;
+    }
+
+    main div {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 1080px) {
+
+    body {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .navigation li {
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    main div {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

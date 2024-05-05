@@ -4,15 +4,11 @@
 :root {
     --primary-color: lightblue;
     --secondary-color: black;
-    /* --accent1-color: #FEFAE0;
-    --accent2-color: #DDA15E; */
+
     --heading-font: 'PT Serif', serif;
     --paragraph-font: 'PT Serif', serif;
 
     --nav-background-color: #DDA15E;
-    /* --nav-link-color: #283618; */
-    /* --nav-hover-link-color: #283618; */
-    /* --nav-hover-background-color: #FEFAE0; */
 }
 
 body {
