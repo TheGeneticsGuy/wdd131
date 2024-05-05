@@ -9,3 +9,6 @@ hamburgerButton.addEventListener("click", () => {
     nav.classList.toggle("open");
     hamburgerButton.classList.toggle("open");
 });
+
+// // Change the name of the page
+// const page = getElementById('page');
