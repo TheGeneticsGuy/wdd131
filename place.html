@@ -7,7 +7,7 @@
     <title>WDD 131 - Country Page Assignment - Aaron Topping</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="description" content="WDD 131 - Country Page - Week 3 Assignment">
+    <meta name="description" content="WDD 131 - Country Page - Week 3 Assignment - Tucson">
     <meta name="author" content="Aaron Topping">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
@@ -15,10 +15,72 @@
 
 <body>
     <header>
+        <picture>
+            <source srcset="images/arizona-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/arizona-medium.webp" media="(min-width: 500px)">
+            <img src="images/arizona-small.webp" alt="AZ Flag Banner" width="500" height="111">
+        </picture>
+        <h1>Tucson, AZ, USA</h1>
 
+        <div class="divider"></div>
     </header>
 
     <main>
+        <div class="hero-mobile">
+            <picture>
+                <source srcset="images/saguaro-medium.webp" media="(min-width: 500px)">
+                <img src="images/saguaro-small.webp" alt="Saguaro" width="500" height="750">
+            </picture>
+        </div>
+
+        <div class="hero-wide">
+            <picture>
+                <source srcset="images/desert-large.webp" media="(min-width: 1000px)">
+                <img src="images/desert-medium.webp" alt="Desert" width="500" height="492">
+            </picture>
+        </div>
+
+        <div class="data-blocks">
+            <div class="data">
+                <h2>Data</h2>
+                <div class="left-column">
+                    <p>Area:</p>
+                    <p>Population:</p>
+                    <p>Capital:</p>
+                    <p>Languages:</p>
+                    <p>Currency:</p>
+                    <p>Time Zone:</p>
+                    <p>Calling Code:</p>
+                    <p>Internet TLG:</p>
+                </div>
+                <div class="right-column">
+                    <p>295,254 km²</p>
+                    <p>7,151,502</p>
+                    <p>Phoenix</p>
+                    <p>English</p>
+                    <p>US Dollar ($)</p>
+                    <p>UTC+7</p>
+                    <p>+01</p>
+                    <p>.us</p>
+                </div>
+
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <div class="left-column">
+                    <p>Temperature:</p>
+                    <p>Conditions:</p>
+                    <p>Wind:</p>
+                    <p>Wind Chill:</p>
+                </div>
+                <div class="right-column">
+                    <p>93ºF</p>
+                    <p>Sunny</p>
+                    <p>5km/h</p>
+                    <p><span id="windchill"></span></p>
+                </div>
+            </div>
+        </div>
 
     </main>
 
