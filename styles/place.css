@@ -106,15 +106,11 @@ header h1 {
     text-align: center;
 }
 
-.weather h2::after {
-    content: "";
-    background-image: url("../images/weather_icon_mobile.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin: 15px auto;
+.weather img {
+    grid-column: 1 / -1;
+    height: 45px;
+    width: 45px;
+    justify-self: center;
 }
 
 /* FOOTER */
@@ -180,11 +176,18 @@ footer p {
         left: 58vw;
     }
 
+    .weather img {
+        display: none;
+    }
+
     .footer {
         margin-top: -4px;
     }
 
     .weather h2::after {
+        content: "";
+        width: 60px;
+        height: 60px;
         background-image: url("../images/weather_icon_wide.svg");
         background-repeat: no-repeat;
         background-size: contain;
