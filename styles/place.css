@@ -188,7 +188,7 @@ footer p {
         content: "";
         width: 60px;
         height: 60px;
-        background-image: url("../images/weather_icon_wide.svg");
+        background-image: url("../images/weather_icon_wide.webp");
         background-repeat: no-repeat;
         background-size: contain;
         display: inline-block;
