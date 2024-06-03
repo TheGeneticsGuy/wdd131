@@ -30,7 +30,7 @@ header {
     position: relative;
     padding: 20px 0;
     font-family: var(--heading-font);
-    color: black;
+    color: var(--button-color);
 }
 
 .header-content {
@@ -51,8 +51,8 @@ header {
     position: absolute;
     top: 50%;
     width: 100vw;
-    height: 1px;
-    background-color: #000;
+    height: 3px;
+    background-color: var(--button-color);
 }
 
 .header-content h1::before {
@@ -64,12 +64,13 @@ header {
 }
 
 h1 {
-    color: black;
+    color: var(--button-color);
 }
 
 h1:hover {
     text-decoration: underline;
     transform: scale(1.2);
+    transition: 0.2s ease;
     color: #FFF;
     text-shadow: 0 0 5px #03e9f4,
         0 0 25px #03e9f4,
@@ -78,15 +79,13 @@ h1:hover {
 }
 
 h1 a:visited {
-    color: black;
+    color: var(--button-color);
 }
 
 h1 a {
     text-decoration: none;
-    color: black
+    color: var(--button-color)
 }
-
-
 
 h1 a:hover {
     color: #FFF;
@@ -95,11 +94,75 @@ h1 a:hover {
 
 h1 a:visited {
     text-decoration: none;
-    color: black;
+    color: var(--button-color);
 }
 
 /* NAVIGATION IMAGES */
 
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 444px;
+    height: 250px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.img-link {
+    display: block;
+    position: relative;
+}
+
+.img-container {
+    position: relative;
+}
+
+.nav-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    /* padding-top: 50%;
+    padding-bottom: 50%; */
+    font-size: 30px;
+    text-align: center;
+}
 
 /* BODY */
 
@@ -110,7 +173,7 @@ main {
 /* FOOTER */
 
 footer {
-    background: var(--headerfooter-color);
+    background: var(--button-color);
     padding-bottom: 0rem;
 }
 
@@ -120,4 +183,5 @@ footer p {
     text-align: center;
     margin: 0;
     padding: 0.25rem;
+    color: white;
 }
