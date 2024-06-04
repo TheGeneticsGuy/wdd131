@@ -1,8 +1,7 @@
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 880px) {
 
 
     /*----------- BODY --------------*/
-
 
 
     /*----------- HEADER --------------*/
@@ -11,6 +10,61 @@
 
     /*----------- NAVIGATION --------------*/
 
+    .carousel {
+        max-width: 880px;
+        width: 100%;
+    }
+
+
+    /*----------- MAIN --------------*/
+    .timeLeft {
+        font-size: 1.8vw;
+    }
+
+    #destinationImg {
+        display: none;
+    }
+
+    #destinationHeaderImgLrg {
+        display: flex;
+        width: 100%;
+        height: auto;
+        max-width: 92vw;
+    }
+
+    .dividerImg img {
+        width: 92vw;
+        max-width: 100%;
+    }
+
+    #clothBG {
+        display: flex;
+        width: 100%;
+        height: auto;
+        max-width: 92vw;
+    }
+
+
+    /*----------- FOOTER --------------*/
+
+}
+
+@media only screen and (min-width: 1320px) {
+
+
+    /*----------- BODY --------------*/
+
+
+    /*----------- HEADER --------------*/
+
+
+
+    /*----------- NAVIGATION --------------*/
+
+    .carousel {
+        max-width: 1340px;
+        width: 100%;
+    }
 
 
     /*----------- MAIN --------------*/
@@ -20,5 +74,3 @@
     /*----------- FOOTER --------------*/
 
 }
-
-/* end of media query */

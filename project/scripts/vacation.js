@@ -1,6 +1,6 @@
 document.querySelector("#currentyear").innerHTML = new Date().getFullYear();
 
-// NAVIATION CAROUSEL
+// NAVIATION IMAGE SLIDER //
 
 const carousel = document.querySelector('.carousel-inner');
 const prevButton = document.querySelector('.prev');
@@ -28,6 +28,62 @@ function showPrevItem() {
 nextButton.addEventListener('click', showNextItem);
 prevButton.addEventListener('click', showPrevItem);
 
+
+
+// COUNTDOWN LOGIC
+
+const countdownText = document.querySelector('#countdown');
+const targetDate = new Date("September 17, 2024 10:00:00 EST");
+
+// Update the countdown every second
+const countdown = setInterval(function () {
+    // Get the current date and time
+    const now = new Date().getTime();
+
+    // Calculate the time remaining
+    const timeRemaining = targetDate - now;
+
+    // Calculate days, hours, minutes, and seconds
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+    // Display the countdown
+    countdownText.textContent = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
+
+    if (days < 7 && days > -1) {
+        countdownText.classList.add("countdownColor2");
+    } else {
+        countdownText.classList.remove("countdownColor2");
+    }
+
+    // If the countdown is finished, clear the interval
+    if (timeRemaining < 0) {
+        clearInterval(countdown);
+        countdownText.textContent = "Enjoy Your Sailing!";
+        countdownText.classList.add("explode");
+        countdownText.classList.add("countdownColor1");
+    }
+}, 1000);
+
+// BUTTON ITINERARY MAP OPEN/CLOSE LOGIC
+// LOGIC FOR ALL DOM CONTENT LOAD
+document.addEventListener('DOMContentLoaded', function () {
+    const mapButton = document.querySelector('#mapButton');
+    const mapImage = document.querySelector('#mapImage');
+
+    mapButton.addEventListener('click', function () {
+        if (mapImage.style.display === 'none') {
+            mapImage.style.display = 'block';
+            mapButton.textContent = 'Close Map';
+            mapImage.scrollIntoView({ behavior: 'smooth', block: 'end' });  // Scrolls to bottom of img
+        } else {
+            mapImage.style.display = 'none';
+            mapButton.textContent = 'View Map';
+        }
+    });
+});
 
 const destinations = [
     {

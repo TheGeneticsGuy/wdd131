@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perry Family Cruise</title>
+    <title>Topping Family Cruise</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="description" content="WDD 131 - Final Project - Perry Family Cruise - Aaron Topping.">
+    <meta name="description" content="WDD 131 - Final Project - Topping Family Cruise - Aaron Topping.">
     <meta name="author" content="Aaron Topping">
 
     <!-- STYLE SHEETS -->
@@ -24,7 +24,7 @@
 
     <header>
         <div class="header-content">
-            <h1><a href="#" id="home" title="Home">Perry Family Cruise</a>
+            <h1><a href="#" id="home" title="Home">Topping Family Cruise</a>
             </h1>
         </div>
 
@@ -32,58 +32,67 @@
             <div class="carousel-inner">
                 <div class="carousel-item">
                     <a href="#" class="img-link">
-                        <div class="img-container">
-                            <img src="images/newyork_nav.webp" alt="NY">
+                        <div class="img-nav">
+                            <img src="images/newyork_nav.webp" alt="NY" loading="lazy" width="444" height="250">
                             <p class="nav-text">New York</p>
+                            <p class="nav-text2">Day 1</p>
                         </div>
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a href="#" class="img-link">
-                        <div class="img-container">
-                            <img src="images/boston_nav.webp" alt="Boston">
+                        <div class="img-nav">
+                            <img src="images/boston_nav.webp" alt="Boston" loading="lazy" width="444" height="250">
                             <p class="nav-text">Boston</p>
+                            <p class="nav-text2">Day 2</p>
                         </div>
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a href="#" class="img-link">
-                        <div class="img-container">
-                            <img src="images/portland_nav.webp" alt="Portland">
+                        <div class="img-nav">
+                            <img src="images/portland_nav.webp" alt="Portland" loading="lazy" width="444" height="250">
                             <p class="nav-text">Portland</p>
+                            <p class="nav-text2">Day 3</p>
                         </div>
                     </a>
 
                 </div>
                 <div class="carousel-item">
                     <a href="#" class="img-link">
-                        <div class="img-container">
-                            <img src="images/sydney_nav.webp" alt="Sydney">
+                        <div class="img-nav">
+                            <img src="images/sydney_nav.webp" alt="Sydney" loading="lazy" width="444" height="250">
                             <p class="nav-text">Sydney</p>
+                            <p class="nav-text2">Day 5</p>
                         </div>
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a href="#" class="img-link">
-                        <div class="img-container">
-                            <img src="images/charlottetown_nav.webp" alt="Charlottetown">
+                        <div class="img-nav">
+                            <img src="images/charlottetown_nav.webp" alt="Charlottetown" loading="lazy" width="444"
+                                height="250">
                             <p class="nav-text">Charlottetown</p>
+                            <p class="nav-text2">Day 6</p>
                         </div>
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a href="#" class="img-link">
-                        <div class="img-container">
-                            <img src="images/saguenay_nav.webp" alt="Saguenay">
+                        <div class="img-nav">
+                            <img src="images/saguenay_nav.webp" alt="Saguenay" loading="lazy" width="444" height="250">
                             <p class="nav-text">Saguenay</p>
+                            <p class="nav-text2">Day 8</p>
                         </div>
                     </a>
                 </div>
                 <div class="carousel-item">
                     <a href="#" class="img-link">
-                        <div class="img-container">
-                            <img src="images/quebeccity_nav.webp" alt="Québec City">
+                        <div class="img-nav">
+                            <img src="images/quebeccity_nav.webp" alt="Québec City" loading="lazy" width="444"
+                                height="250">
                             <p class="nav-text">Québec City</p>
+                            <p class="nav-text2">Day 9</p>
                         </div>
                     </a>
                 </div>
@@ -96,6 +105,80 @@
     </header>
 
     <main>
+
+        <!-- COUNTDOWN -->
+        <div class="timeLeft">
+            <h2>COUNTDOWN TO SAILING</h2>
+            <p><span id='countdown'></span></p>
+        </div>
+
+        <!-- ITINERARY MAP -->
+        <div class="map">
+            <button id="mapButton">View Map</button>
+            <div class="mapContainer">
+                <picture>
+                    <source srcset="images/itinerary-map-med.webp" media="(min-width: 667px)">
+                    <img id="mapImage" src="images/itinerary-map-small.webp" alt="Itinerary Map" width="450"
+                        height="334" style="display: none;">
+                </picture>
+            </div>
+        </div>
+
+        <!-- DIVIDER WITH IMAGE BELOW -->
+
+        <div class="destinationDetails">
+            <div class="dividerImg">
+                <picture>
+                    <source srcset="images/wood_med.webp" media="(min-width: 1320px)">
+                    <img src="images/wood_small.webp" alt="woodDivider" loading="lazy" width="880" height="46">
+                </picture>
+            </div>
+            <div class="locationBanner">
+
+                <div class="joy">
+                    <picture>
+                        <source srcset="images/joy-vert-med.webp" media="(min-width: 720px)">
+                        <img src="images/joy-vert-small.webp" id="destinationImg" alt="Joy of the Seas" loading="lazy"
+                            width="462" height="435">
+                    </picture>
+                    <picture>
+                        <source srcset="images/joy-large.webp" media="(min-width: 720px)">
+                        <img src="images/joy-med.webp" id="destinationHeaderImgLrg" alt="Joy of the Seas Img"
+                            loading="lazy" width="462" height="435">
+                    </picture>
+                </div>
+
+                <div class="LocationDetails">
+                    <div class='city'>
+
+                    </div>
+                    <div class="excursions">
+
+                    </div>
+                </div>
+
+                <div class="shipDetails">
+                    <h2>Norwegian Joy</h2>
+                    <div class="ncl-details">
+                        <a href="https://www.ncl.com/shorex/login" target="_blank">
+                            <div class="circle">
+                                <span class="ncl-link">Norwegian Account</span>
+                            </div>
+                        </a>
+                        <a href="https://www.ncl.com/cruise-ship/joy" target="_blank">
+                            <div class="circle">
+                                <span class="ncl-link">Cruise Ship Details</span>
+                            </div>
+                        </a>
+                        <a href="https://boards.cruisecritic.com/forum/803-norwegian-joy-roll-calls/" target="_blank">
+                            <div class="circle">
+                                <span class="ncl-link">Cruise Critic</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- https://www.ncl.com/shorex/login -->
         <!-- https://www.ncl.com/cruise-ship/joy -->
