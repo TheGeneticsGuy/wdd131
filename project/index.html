@@ -7,6 +7,10 @@
     <title>Topping Family Cruise</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <meta name="description" content="WDD 131 - Final Project - Topping Family Cruise - Aaron Topping.">
     <meta name="author" content="Aaron Topping">
 
@@ -216,9 +220,9 @@
 
         <section class="excursion-page" style="display: none;">
             <h2>SHORE EXCURSIONS (<span class="excursionCount"></span>)</h2>
-            <section>
+            <div>
                 <button id="suggestionButton">Suggest Excursion</button>
-            </section>
+            </div>
             <div class="excursion-grid" id="excGrid">
                 <!-- JS to build the grid elements -->
             </div>
@@ -226,6 +230,45 @@
 
         <section class="formPage" style="display: none;">
             <h2>SUGGEST EXCURSION</h2>
+
+            <form method="get" action="#" id="coreForm">
+
+                <fieldset>
+
+                    <div>Location* </div>
+                    <label>
+                        <select name="citySelection" id="citySelection" required>
+                            <option value="" disabled selected>Select a City...</option>
+                        </select>
+                    </label>
+
+                    <div>Excursion Title*</div>
+                    <label><input type="text" id="titleInput" name="titleInput" placeholder=">" required></label>
+
+                    <div>Duration (hours)*</div>
+                    <label><input type="text" pattern="^\d*(\.\d{0,1})?$"
+                            title="Please enter a numeric value with at most one decimal place" id="timeInput"
+                            name="timeInput" placeholder=">" required></label>
+
+                    <div>Cost ($)*</div>
+                    <label><input type="text" pattern="^\d+$" title="Please enter a whole number" id="dollarInput"
+                            name="dollarInput" placeholder=">" required></label>
+
+                    <div>Description <span id="optionalText">(Optional)</span></div>
+                    <textarea id="textentry" name="textentry" placeholder=">"></textarea>
+
+                    <p class="req"><i>(*) Required</i></p>
+
+                </fieldset>
+
+                <input type="submit" value="Add My Suggestion">
+
+            </form>
+
+            <div class="numSuggestionSubs" style="display: none;">
+                <p><span class="suggestions"></span></p>
+            </div>
+
         </section>
 
     </main>

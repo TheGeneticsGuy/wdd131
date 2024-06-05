@@ -296,6 +296,74 @@ const excursionList = [
     }
 ]
 
+const cities = [
+    {
+        id: 'nyc-option',
+        name: "New York, New York",
+    },
+    {
+        id: 'bos-option',
+        name: "Boston, Massachusetts",
+    },
+    {
+        id: 'port-option',
+        name: "Portland, Maine",
+    },
+    {
+        id: 'syd-option',
+        name: "Sydney, Nova Scotia",
+    },
+    {
+        id: 'char-option',
+        name: 'Charlottetown, Prince Edward Island',
+    },
+    {
+        id: 'sag-option',
+        name: 'Saguenay (La Baie), Québec',
+    },
+    {
+        id: 'queb-option',
+        name: 'Québec City, Canada',
+    }
+];
+
+// Reviews Count
+let count = parseInt(localStorage.getItem("numSuggestions")) || 0;   // Default is zero
+const inputForm = document.querySelector('#coreForm');
+const suggestions = document.querySelector('.suggestions');
+const numSuggestedSubs = document.querySelector('.numSuggestionSubs');
+
+inputForm.addEventListener('submit', function (event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Add the count to local storage
+    count++;
+    localStorage.setItem("numSuggestions", count);
+
+    // Hide the form
+    inputForm.style.display = 'none';
+
+    // Show the result
+    numSuggestedSubs.style.display = "block";
+    suggestions.innerHTML = `Number of Excursions Suggested: ${count}`;
+
+});
+
+// Options Dropdown on form
+function buildOptions() {
+
+    const selectElement = document.querySelector("#citySelection");
+
+    cities.forEach(item => {
+        const choice = document.createElement('option');
+        choice.value = item.id;
+        choice.textContent = item.name;
+        selectElement.appendChild(choice);
+    });
+}
+
+
 // Builds the Excursion "cards"
 function renderExcursionCards(filteredExcursions) {
     resetExcursionGrid();
@@ -406,6 +474,7 @@ const headerHomeButton = document.querySelector("#home");
 const nyNav = document.querySelector('#ny');
 const bosNav = document.querySelector('#bos');
 const formPage = document.querySelector('.formPage');
+const homePage = document.querySelector(".homeDetails");
 
 // Reset HTML renders for filtering purposes
 function resetExcursionGrid() { excursionGrid.innerHTML = "" };
@@ -413,7 +482,7 @@ function resetCityHeader() { cityHeader.innerHTML = "" };
 
 // Show the elements on home page, hide the others
 function showHome() {
-    const homePage = document.querySelector(".homeDetails");
+
     if (homePage.style.display === 'none') {
         homePage.style.display = 'block';
         cityElements.style.display = "none";
@@ -425,8 +494,6 @@ function showHome() {
 
 // Hide home page exclusive elements
 function hideHome() {
-    const homePage = document.querySelector(".homeDetails");
-
     if (homePage.style.display === 'block') {
         homePage.style.display = 'none';
     }
@@ -434,7 +501,6 @@ function hideHome() {
         formPage.style.display = 'none';
     }
 }
-
 
 // Show the city elements
 function showCityElements() {
@@ -451,6 +517,7 @@ function loadCityDetails() {
     }
 }
 
+// Sow the excursion details
 function showexcursionPageElements() {
     excursionPage.style.display = "grid";
 }
@@ -478,12 +545,15 @@ function loadSuggestionButton() {
         suggestButton.addEventListener('click', function () {
             resetExcursionGrid();
             excursionPage.style.display = 'none';
+            cityElements.style.display = "none";
             formPage.style.display = 'block';
+            inputForm.style.display = 'block';
+            suggestions.innerHTML = "";
         });
     }
 }
 
-
+// Filter the excursion list by city, by city id
 function GetExcursionsByID(id) {
     return excursionList.filter(excursion => excursion.id === id);
 }
@@ -513,4 +583,5 @@ document.addEventListener('DOMContentLoaded', function () {
     configureNav();
     loadExcursionsButton();
     loadSuggestionButton();
+    buildOptions();
 });
