@@ -4,8 +4,9 @@
 
 
 :root {
-    --button-color: #473D3A;
+    --button-color: #332b29;
     --secondary-color: #B25E39;
+    --background-color: #f5f4f0;
 
     /* Text Color */
     --primarytext-color: black;
@@ -25,6 +26,7 @@ body {
     margin: 0 auto;
     max-width: 1380px;
     /*  Max of 3 nav images */
+    background-color: var(--background-color);
 }
 
 /* HEADER */
@@ -195,12 +197,18 @@ main {
     padding-bottom: 1rem;
 }
 
+.homeDetails {
+    display: block;
+    text-align: center;
+}
+
 /* COUNTDOWN */
 
 .timeLeft {
     text-align: center;
     font-family: var(--paragraph-font);
     font-size: 2.5vw;
+    margin-top: 20px;
 }
 
 .countdownColor1,
@@ -235,7 +243,8 @@ main {
     justify-content: center;
 }
 
-.map button {
+.map button,
+#excursionsHomeButton {
     background-color: var(--button-color);
     color: white;
     border: none;
@@ -246,9 +255,12 @@ main {
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 0 4px #2c2623;
+    width: 240px;
+    text-wrap: none;
 }
 
-.map button:active {
+.map button:active,
+#excursionsHomeButton:active {
     box-shadow: 0 2px #2c2623;
     transform: translateY(2px);
 }
@@ -331,10 +343,174 @@ main {
     box-sizing: border-box;
 }
 
+/* CITY HEADER */
 
+.dividerLine {
+    height: 5px;
+    background-color: var(--button-color);
+}
 
+.cityHeader {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+}
 
+.cityHeader img {
+    width: 95vw;
+    max-width: 800px;
+    justify-content: center;
+}
 
+.cityName {
+    color: black;
+    font-size: 36px;
+}
+
+.cityName::after {
+    content: url('images/blue-icon.svg');
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+.detailsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.detailsGrid>* {
+    align-items: center;
+    /* Center items vertically within each grid cell */
+}
+
+.detailsGrid p {
+    font-family: var(--paragraph-font);
+    max-width: 1fr;
+    font-size: 22px;
+}
+
+.weatherDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid rgba(230, 230, 230);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    background-color: rgb(216, 216, 216);
+    justify-items: center;
+    text-align: center;
+    grid-gap: 10px;
+    width: 95vw;
+    max-width: 500px;
+    min-width: 300px;
+    height: 180px;
+    justify-self: center;
+}
+
+.weatherDetails h2 {
+    grid-column: 1 / -1;
+    /* Span across all columns */
+    padding-top: 20px;
+}
+
+#monthOfWeather {
+    color: rgb(40, 117, 204);
+    font-size: 18px;
+}
+
+.weatherDetails a {
+    text-decoration: none;
+}
+
+.weatherDetails p {
+    font-family: var(--paragraph-font);
+}
+
+.w_column {
+    margin-bottom: 20px;
+}
+
+.temp {
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.excursions {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* EXCURSIONS */
+
+.excursion-page {
+    text-align: center;
+    grid-template-columns: 1fr;
+}
+
+.excursion-page h2 {
+    grid-column: 1 / -1;
+    font-family: var(--heading-font);
+    font-size: 40px;
+    margin: 20px;
+}
+
+.excursion-grid {
+    width: 100%;
+    gap: 15px;
+}
+
+.excursion-grid section {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 1px solid rgb(158, 158, 158);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 25px;
+    text-align: center;
+}
+
+.excursion-grid section h3 {
+    grid-column: 1 / -1;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.excursion-grid section img {
+    width: 75%;
+    max-width: 400px;
+    height: auto;
+    padding-bottom: 20px;
+    justify-self: center;
+}
+
+.excursion-grid section div {
+    font-family: var(--paragraph-font);
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    justify-self: center;
+    /* position: relative; */
+    top: 40px;
+}
+
+.durationText {
+    color: rgb(40, 117, 204);
+}
+
+.excDescription {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: var(--paragraph-font);
+    font-size: 1.2rem;
+}
 
 /* FOOTER */
 

@@ -24,14 +24,14 @@
 
     <header>
         <div class="header-content">
-            <h1><a href="#" id="home" title="Home">Topping Family Cruise</a>
+            <h1><a href="index.html" id="home" title="Home">Topping Family Cruise</a>
             </h1>
         </div>
 
         <div class="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item">
-                    <a href="#" class="img-link">
+                    <a href="#" id="ny" class="img-link">
                         <div class="img-nav">
                             <img src="images/newyork_nav.webp" alt="NY" loading="lazy" width="444" height="250">
                             <p class="nav-text">New York</p>
@@ -40,7 +40,7 @@
                     </a>
                 </div>
                 <div class="carousel-item">
-                    <a href="#" class="img-link">
+                    <a href="#" id="bos" class="img-link">
                         <div class="img-nav">
                             <img src="images/boston_nav.webp" alt="Boston" loading="lazy" width="444" height="250">
                             <p class="nav-text">Boston</p>
@@ -49,7 +49,7 @@
                     </a>
                 </div>
                 <div class="carousel-item">
-                    <a href="#" class="img-link">
+                    <a href="#" id="port" class="img-link">
                         <div class="img-nav">
                             <img src="images/portland_nav.webp" alt="Portland" loading="lazy" width="444" height="250">
                             <p class="nav-text">Portland</p>
@@ -59,7 +59,7 @@
 
                 </div>
                 <div class="carousel-item">
-                    <a href="#" class="img-link">
+                    <a href="#" id="syd" class="img-link">
                         <div class="img-nav">
                             <img src="images/sydney_nav.webp" alt="Sydney" loading="lazy" width="444" height="250">
                             <p class="nav-text">Sydney</p>
@@ -68,7 +68,7 @@
                     </a>
                 </div>
                 <div class="carousel-item">
-                    <a href="#" class="img-link">
+                    <a href="#" id="char" class="img-link">
                         <div class="img-nav">
                             <img src="images/charlottetown_nav.webp" alt="Charlottetown" loading="lazy" width="444"
                                 height="250">
@@ -78,7 +78,7 @@
                     </a>
                 </div>
                 <div class="carousel-item">
-                    <a href="#" class="img-link">
+                    <a href="#" id="sag" class="img-link">
                         <div class="img-nav">
                             <img src="images/saguenay_nav.webp" alt="Saguenay" loading="lazy" width="444" height="250">
                             <p class="nav-text">Saguenay</p>
@@ -87,7 +87,7 @@
                     </a>
                 </div>
                 <div class="carousel-item">
-                    <a href="#" class="img-link">
+                    <a href="#" id="queb" class="img-link">
                         <div class="img-nav">
                             <img src="images/quebeccity_nav.webp" alt="Québec City" loading="lazy" width="444"
                                 height="250">
@@ -106,82 +106,123 @@
 
     <main>
 
-        <!-- COUNTDOWN -->
-        <div class="timeLeft">
-            <h2>COUNTDOWN TO SAILING</h2>
-            <p><span id='countdown'></span></p>
-        </div>
-
-        <!-- ITINERARY MAP -->
-        <div class="map">
-            <button id="mapButton">View Map</button>
-            <div class="mapContainer">
-                <picture>
-                    <source srcset="images/itinerary-map-med.webp" media="(min-width: 667px)">
-                    <img id="mapImage" src="images/itinerary-map-small.webp" alt="Itinerary Map" width="450"
-                        height="334" style="display: none;">
-                </picture>
+        <div class="dividerLine"></div>
+        <div class="homeDetails" style="display: block;">
+            <!-- COUNTDOWN -->
+            <div class="timeLeft">
+                <h2>COUNTDOWN TO SAILING</h2>
+                <p><span id='countdown'></span></p>
             </div>
-        </div>
 
-        <!-- DIVIDER WITH IMAGE BELOW -->
-
-        <div class="destinationDetails">
-            <div class="dividerImg">
-                <picture>
-                    <source srcset="images/wood_med.webp" media="(min-width: 1320px)">
-                    <img src="images/wood_small.webp" alt="woodDivider" loading="lazy" width="880" height="46">
-                </picture>
-            </div>
-            <div class="locationBanner">
-
-                <div class="joy">
+            <!-- ITINERARY MAP -->
+            <div class="map">
+                <button id="mapButton">View Map</button>
+                <button id="excursionsHomeButton">View Excursions</button>
+                <div class="mapContainer">
                     <picture>
-                        <source srcset="images/joy-vert-med.webp" media="(min-width: 720px)">
-                        <img src="images/joy-vert-small.webp" id="destinationImg" alt="Joy of the Seas" loading="lazy"
-                            width="462" height="435">
-                    </picture>
-                    <picture>
-                        <source srcset="images/joy-large.webp" media="(min-width: 720px)">
-                        <img src="images/joy-med.webp" id="destinationHeaderImgLrg" alt="Joy of the Seas Img"
-                            loading="lazy" width="462" height="435">
+                        <source srcset="images/itinerary-map-med.webp" media="(min-width: 667px)">
+                        <img id="mapImage" src="images/itinerary-map-small.webp" alt="Itinerary Map" width="450"
+                            height="334" style="display: none;">
                     </picture>
                 </div>
+            </div>
 
-                <div class="LocationDetails">
-                    <div class='city'>
+            <!-- DIVIDER WITH IMAGE BELOW -->
 
-                    </div>
-                    <div class="excursions">
-
-                    </div>
+            <div class="destinationDetails">
+                <div class="dividerImg">
+                    <picture>
+                        <source srcset="images/wood_med.webp" media="(min-width: 1320px)">
+                        <img src="images/wood_small.webp" alt="woodDivider" loading="lazy" width="880" height="46">
+                    </picture>
                 </div>
+                <div class="locationBanner">
 
-                <div class="shipDetails">
-                    <h2>Norwegian Joy</h2>
-                    <div class="ncl-details">
-                        <a href="https://www.ncl.com/shorex/login" target="_blank">
-                            <div class="circle">
-                                <span class="ncl-link">Norwegian Account</span>
-                            </div>
-                        </a>
-                        <a href="https://www.ncl.com/cruise-ship/joy" target="_blank">
-                            <div class="circle">
-                                <span class="ncl-link">Cruise Ship Details</span>
-                            </div>
-                        </a>
-                        <a href="https://boards.cruisecritic.com/forum/803-norwegian-joy-roll-calls/" target="_blank">
-                            <div class="circle">
-                                <span class="ncl-link">Cruise Critic</span>
-                            </div>
-                        </a>
+                    <div class="joy">
+                        <picture>
+                            <source srcset="images/joy-vert-med.webp" media="(min-width: 720px)">
+                            <img src="images/joy-vert-small.webp" id="destinationImg" alt="Joy of the Seas"
+                                loading="lazy" width="462" height="435">
+                        </picture>
+                        <picture>
+                            <source srcset="images/joy-large.webp" media="(min-width: 720px)">
+                            <img src="images/joy-med.webp" id="destinationHeaderImgLrg" alt="Joy of the Seas Img"
+                                loading="lazy" width="462" height="435">
+                        </picture>
+                    </div>
+
+                    <div class="shipDetails">
+                        <h2>Norwegian Joy</h2>
+                        <div class="ncl-details">
+                            <a href="https://www.ncl.com/shorex/login" target="_blank">
+                                <div class="circle">
+                                    <span class="ncl-link">Norwegian Account</span>
+                                </div>
+                            </a>
+                            <a href="https://www.ncl.com/cruise-ship/joy" target="_blank">
+                                <div class="circle">
+                                    <span class="ncl-link">Cruise Ship Details</span>
+                                </div>
+                            </a>
+                            <a href="https://boards.cruisecritic.com/forum/803-norwegian-joy-roll-calls/"
+                                target="_blank">
+                                <div class="circle">
+                                    <span class="ncl-link">Cruise Critic</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- https://www.ncl.com/shorex/login -->
-        <!-- https://www.ncl.com/cruise-ship/joy -->
+        <!-- TECHNICALLY CITY DETAILS FOLLOWED UP BY EXCURSIONS -->
+        <div class="excursions" style="display: none;">
+            <div class="cityHeader">
+                <!-- LOADED IN JAVASCRIPT FOR EACH CITY SO I CAN SOURCE IMAGES BY OBJECT ARRAY -->
+            </div>
+
+            <div class="cityDetails">
+                <h2 class="cityName">
+                    <img src="images/blue-icon.svg" alt="Icon" width="30" height="30"
+                        style="vertical-align: middle;margin-top: -7px;margin-right: 0.25em;">
+                    <span id="cityN"></span>
+                </h2>
+                <div class="detailsGrid">
+                    <p><span id='cityDescription'></span></p>
+
+                    <!-- WEATHER BLOCK -->
+                    <section class="weatherDetails">
+                        <h2>THE WEATHER IN <a id="weatherLink" href="#" target="_blank"><span
+                                    id="monthOfWeather">&nbsp;&nbsp;SEPTEMBER...</span></a>
+                        </h2>
+                        <div class="w_column">
+                            <p>Avg. Temperature</p>
+                            <p class="temp"><img src="images/thermometer.png" alt="Icon" width="40" height="40"
+                                    style="vertical-align: middle;margin-top: -5px;margin-right: 0.25em;"><span
+                                    id="temp1"></span> - <span id="temp2"></span>ºF</p>
+                        </div>
+                        <div class="w_column">
+                            <p>Avg. Precipitation</p>
+                            <p class="temp"><img src="images/precip.png" alt="Icon" width="40" height="40"
+                                    style="vertical-align: middle;margin-top: -5px;margin-right: 0.25em;"><span
+                                    id="precip"></span> In.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="excursion-page" style="display: none;">
+            <h2>EXCURSION OPTIONS</h2>
+            <section>
+                <p>Filter Form Section</p>
+            </section>
+            <div class="excursion-grid" id="excGrid">
+                <!-- JS to build the grid elements -->
+            </div>
+        </section>
 
     </main>
 
