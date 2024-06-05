@@ -337,6 +337,7 @@ main {
 
 .circle span {
     color: var(--headerfooter-color);
+    text-shadow: 1px 2px 4px rgba(255, 255, 255, 0.2);
     font-weight: bold;
     font-size: 24px;
     padding: 10px;
@@ -452,7 +453,8 @@ main {
     grid-template-columns: 1fr;
 }
 
-.excursion-page h2 {
+.excursion-page h2,
+.formPage h2 {
     grid-column: 1 / -1;
     font-family: var(--heading-font);
     font-size: 40px;
@@ -510,6 +512,22 @@ main {
     text-align: center;
     font-family: var(--paragraph-font);
     font-size: 1.2rem;
+}
+
+#suggestionButton {
+    background: var(--button-color);
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 20px;
+    margin: 10px;
+    width: 75%;
+    min-width: 300px;
+    text-wrap: none;
+}
+
+.formPage h2 {
+    text-align: center;
 }
 
 /* FOOTER */

@@ -173,7 +173,6 @@ const excursionList = [
         location: 'New York, New York',
         title: 'Statue Of Liberty & Ellis Island',
         description: 'The Statue of Liberty is one of the world\'s most renowned images and one of America\'s most beloved landmarks. This delightful tour allows you to stand at the base of \'Lady Liberty\' and learn all about the history of this iconic Statue. Your tour also includes a visit to the Ellis Island Museum where you will surely catch the spirit of the important role this island played in American history.<br><br>Boarding your coach at the pier, it\'s a brief transfer to Battery Park, which lies at the Southern tip of Manhattan. Here, you will board the ferry and take in the sites of New York Harbor, including beautiful views of the city, Brooklyn and its famous Bridge, Staten Island, New Jersey and the Manhattan skyline in the distance. Your first stop will be Liberty Island for a walk around the base of the magnificent Statue of Liberty (the tour does not include an interior visit of the Statue). Your tour guide will provide detailed information about \'Lady Liberty\', its completion in 1886 and its unique history. Stand in awe as you look up and see what so many saw as their first sight of a new life in America. During your visit, you will be allowed a brief amount of free time to visit the gift shop and enjoy some of the exterior exhibits.',
-        type: 'tour',
         duration: '6',
         cost: 159,
         photoURL: 'images/ny-excursion1.webp'
@@ -181,13 +180,119 @@ const excursionList = [
     {
         id: 'ny',
         location: 'New York, New York',
-        title: 'Statue Of Liberty & Ellis Island',
-        description: 'The Statue of Liberty is one of the world\'s most renowned images and one of America\'s most beloved landmarks. This delightful tour allows you to stand at the base of \'Lady Liberty\' and learn all about the history of this iconic Statue. Your tour also includes a visit to the Ellis Island Museum where you will surely catch the spirit of the important role this island played in American history.<br><br>Boarding your coach at the pier, it\'s a brief transfer to Battery Park, which lies at the Southern tip of Manhattan. Here, you will board the ferry and take in the sites of New York Harbor, including beautiful views of the city, Brooklyn and its famous Bridge, Staten Island, New Jersey and the Manhattan skyline in the distance. Your first stop will be Liberty Island for a walk around the base of the magnificent Statue of Liberty (the tour does not include an interior visit of the Statue). Your tour guide will provide detailed information about \'Lady Liberty\', its completion in 1886 and its unique history. Stand in awe as you look up and see what so many saw as their first sight of a new life in America. During your visit, you will be allowed a brief amount of free time to visit the gift shop and enjoy some of the exterior exhibits.',
-        type: 'tour',
-        duration: '6',
-        cost: 159,
+        title: 'Central Park & The Met',
+        description: 'Travel outside of Manhattan\'s business districts on this relaxed and interesting tour that highlights two well-known New York destinations.<br><br>Your tour starts with a narrated scenic drive to the Upper West Side, viewing many homes of celebrities as well as the Lincoln Center. A brief stop is made at the Dakota building, famous for being the place where John Lennon lived and died. From here, it\'s a short walk through \'Strawberry Fields\' the area of Central Park devoted to him. This historic park is over 150 years old, covers an area of 843 acres and plays host to 25 million visitors each year, along with having the distinction of having over 200 movies filmed there.<br><br>Re-joining your coach, you will continue on to famous 5th Avenue and the Metropolitan Museum of Art, one of the world\'s largest and most prestigious museums in the world, Founded in 1870, the Museum is one of the most visited museums in the world, featuring over two million works of art. The institution\'s permanent collection spans a wealth of history that includes everything from a transported Egyptian Temple to a large collection of 19th and 20th century European paintings. Here, you will have approximately 2.5 hours to explore the museum at your leisure. Your tour guide will inform you of any special, temporary exhibits, provide you with a map to help you navigate your way around and ensure you make the best use of your time. For those who would like a bite to eat or some refreshment, the Museum houses several cafés for your convenience.<br><br>Following your visit at the Met, you will travel further along 5th Avenue before transferring back to the pier where your tour concludes.',
+        duration: '4.5',
+        cost: 129,
         photoURL: 'images/ny-excursion1.webp'
-
+    },
+    {
+        id: 'bos',
+        location: 'Boston, Massachusetts',
+        title: 'Freedom Trail Walk',
+        description: 'Walk the historical Freedom Trail, pausing at many of the most pivotal sites in the American Revolution, while the guide elaborates on their significance in the founding of America. Highlights include the Massachusetts State House, Park Street Church and the Granary Burying Ground, the final resting place of John Hancock, Samuel Adams and Paul Revere. You will see the site of America\’s First Public School and the Old Corner Book Store where authors including Emerson and Longfellow often gathered. Near the circle of stones in front of the Old State House, you will hear the story of the Boston Massacre, the first bloodshed of the Revolution. You will then continue to the North End, Boston\’s oldest residential neighborhood and on to the home of Paul Revere. You will also view the exterior of the Old North Church, where Revere ordered two lanterns hung in the steeple to signal that the British were approaching by sea.',
+        duration: '3.5',
+        cost: 189,
+        photoURL: 'images/bos-excursion1.webp'
+    },
+    {
+        id: 'bos',
+        location: 'Boston, Massachusetts',
+        title: 'Lexington & Concord',
+        description: 'Enjoy a picturesque drive into the outskirts of Boston and explore the historic battlefields of Lexington and Concord, two former farming communities that played pivotal roles in the earliest days of the American Revolution. At Lexington Green, you will see where the opening shots of the war were fired, killing several militiamen. The grassy site is now a public park and National Historic Landmark. You will also learn about the fighting that took place in nearby Concord, in particular at the Old North Bridge that spans the Concord River. It was there in 1775 that “the shot heard around the world” was fired, a skirmish that Ralph Waldo Emerson immortalized in a poem. You may see his home and those of other writers such as Nathaniel Hawthorne and Louisa May Alcott while in Concord. Upon reaching Cambridge, you can explore the hallowed halls of Harvard University on your own.',
+        duration: '4',
+        cost: 95,
+        photoURL: 'images/bos-excursion2.webp'
+    },
+    {
+        id: 'port',
+        location: 'Portland, Maine',
+        title: 'Lighthouses Of Maine',
+        description: 'The spectacular rocky coastline nearby Portland, Maine is studded with lighthouses dating back over 200 years. On this tour you\’ll see three prominent lighthouses and visit the Museum of Portland Head Light. Drive through historic Portland passing by the Eastern Promenade offering a panoramic view of Casco Bay, the Portland Observatory, the new arts district, as well as the thriving business districts.<br><br>Visit Bug Light, a steel structure lined with brick, that was first lit in 1875 to aid navigation for this busy port. Enjoy the Liberty Ship Memorial dedicated to the 266 ships built on the site during WWII. These vessels were the workhorses of the WWII fleet, carrying cargoes of grain, mail, ore, ammo, trucks and troops. Then it\’s a short jaunt to the Spring Point Ledge Lighthouse. Many vessels ran aground on this dangerous ledge before requests from several steamship companies convinced the government to build a lighthouse.<br><br>Travel along Cape Elizabeth\’s rocky coast to Fort Williams, now home of Maine\’s oldest lighthouse. First illuminated on January 10, 1791, Portland Head Light has since stood at the gateway to the harbor for mariners traveling the perilous coast.Here you\’ll have ample time to explore the grounds and visit the museum located in the former lighthouse keeper\’s quarters.It chronicles the history of the lighthouse and Fort Williams with exhibits displaying original artifacts and documents, navigational aids, lenses, video displays, models and photography.',
+        duration: '3.5',
+        cost: 119,
+        photoURL: 'images/port-excursion1.webp'
+    },
+    {
+        id: 'port',
+        location: 'Portland, Maine',
+        title: 'Portland Panoramic',
+        description: 'Settle in for a spectacularly scenic drive around Portland and take in the historical landmarks that define the city. While driving between the Eastern Promenade that fronts Casco Bay and the elevated park along the Western Promenade, you will see a collection of outstanding 19th-century architecture that includes Victoria Mansion. This National Historic Landmark exemplifies the Italian villa style that was fashionable at the time. In the New Arts District, you will pass highlights such as the Portland Museum of Art, the State Theatre and the home where poet Henry Wadsworth Longfellow grew up. Now home to the Maine Historical Society, it is the first house museum in Maine. On the other side of the Fore River, you will find Bug Light Lighthouse, a 19th-century cast-iron lighthouse that was modeled after a monument that stands near the Acropolis in Athens. Only 26 feet high, it became known as The Bug because of its small size.',
+        duration: '1.75',
+        cost: 99,
+        photoURL: 'images/port-excursion2.webp'
+    },
+    {
+        id: 'syd',
+        location: 'Sydney, Cape Breton Island, Nova Scotia',
+        title: 'Scenic Cabot Trail',
+        description: 'Experience the Cabot Trail as you drive along a small portion of the Atlantic shore from the port of Sydney to Ingonish. You\'ll view some of the most dramatic and pristine scenery in North America including spruce covered mountains, tranquil rivers and ocean beaches.<br><br>This tour reveals vistas that inspired Alexander Graham Bell to observe, \"I have traveled around the globe. I have seen the Canadian and American Rockies, the Andes and the Alps and the highlands of Scotland, but for simple beauty, Cape Breton outrivals them all.\" Picture stops along the way will help you remember some of the most dramatic and unspoiled scenery you experienced while on Cape Breton Island. Enjoy a buffet style lunch along the Cabot Trail before returning to your ship.',
+        duration: '7',
+        cost: 179,
+        photoURL: 'images/syd-excursion1.webp'
+    },
+    {
+        id: 'syd',
+        location: 'Sydney, Cape Breton Island, Nova Scotia',
+        title: 'Heart of the Island',
+        description: 'Enjoy a picturesque drive into the outskirts of Boston and explore the historic battlefields of Lexington and Concord, two former farming communities that played pivotal roles in the earliest days of the American Revolution. At Lexington Green, you will see where the opening shots of the war were fired, killing several militiamen. The grassy site is now a public park and National Historic Landmark. You will also learn about the fighting that took place in nearby Concord, in particular at the Old North Bridge that spans the Concord River. It was there in 1775 that “the shot heard around the world” was fired, a skirmish that Ralph Waldo Emerson immortalized in a poem. You may see his home and those of other writers such as Nathaniel Hawthorne and Louisa May Alcott while in Concord. Upon reaching Cambridge, you can explore the hallowed halls of Harvard University on your own.',
+        duration: '3.5',
+        cost: 99,
+        photoURL: 'images/syd-excursion2.webp'
+    },
+    {
+        id: 'char',
+        location: 'Charlottetown, Prince Edward Island',
+        title: 'The Island\'s Finest: Anne, Lobster & Scenic Drive',
+        description: 'Experience the very best of the island on this delightful tour! Learn about the famous fictional character Anne of Green Gables, see the sandy beach and red cliffs at Prince Edward Island National Park and enjoy a delicious traditional lobster lunch. En route, soak up the Island\’s spectacular scenery and learn about island life from your local guide. You\’ll drive through Charlottetown, Canada\’s birthplace, before traveling into the countryside.<br><br>View rolling farmlands, stunning seascapes, tiny villages, bustling harbors and enjoy a stop at a working fishing harbor. Visit Green Gables, the homestead that is featured prominently in Lucy Maud Montgomery\’s book, Anne of Green Gables. Explore the rooms in the house or take a stroll down lover\’s lane. Take in the stunning scenery at the beaches of Prince Edward Island National Park, gazing across the white sandy shore and sapphire blue water to the red sandstone cliffs.<br><br>Enjoy a delicious lobster lunch at the Prince Edward Island Preserve Company, an island landmark. This 1913 butter factory is now a shop showcasing island products, including preserves. Take your time to browse the shop and take in the beautiful gardens before returning to Charlottetown.',
+        duration: '4',
+        cost: 179,
+        photoURL: 'images/char-excursion1.webp'
+    },
+    {
+        id: 'char',
+        location: 'Charlottetown, Prince Edward Island',
+        title: 'Charlottetown Churches Walking Tour',
+        description: 'Meander through Charlottetown at a leisurely pace, admiring four of its most glorious churches, ranging from the oldest to one said to be haunted by phantom bell ringers. After walking from the pier, you will soon arrive in the heart of Charlottetown, home to some of Canada\’s most beautiful and historical churches. Your first destination will be Trinity United Church, which opened in 1864, shortly after the convention that led to the country\’s confederation. The town\’s oldest church in continuous use, Trinity can accommodate 1,000 worshippers and is known for its magnificent stained-glass windows however we\’ll only be able to admire it from the outside due to damage caused by Hurricane Fiona in late 2022. Next, you will visit St. Dunstan\’s Basilica, a stone French Gothic-style church that was rebuilt in 1913 following a devastating fire. It\’s the fourth church built on this site, all of which were destroyed by fire. Now designated a National Historic Site of Canada, the elaborate church is one of the town\’s most visible landmarks, particularly its soaring spires. Then, you will drop by St. James Presbyterian Church. Unlike the stone churches in town, it was features a wooden ceiling and interior columns. Phantom bell ringers supposedly haunt the church, a story that it has been commemorated on stamps. Before returning to the pier, you will also see St. Peter\’s Anglican Cathedral, which was constructed in 1869. Designed by one of Prince Edward Island\’s leading architects at the time, the church is inspiring, as is the attached All Souls Chapel, a National Historic Site.',
+        duration: '3.5',
+        cost: 75,
+        photoURL: 'images/char-excursion2.webp'
+    },
+    {
+        id: 'sag',
+        location: 'Saguenay (La Baie), Québec',
+        title: 'Hiking Saguenay National Park',
+        description: 'Experience the very best of the island on this delightful tour! Learn about the famous fictional character Anne of Green Gables, see the sandy beach and red cliffs at Prince Edward Island National Park and enjoy a delicious traditional lobster lunch. En route, soak up the Island\’s spectacular scenery and learn about island life from your local guide. You\’ll drive through Charlottetown, Canada\’s birthplace, before traveling into the countryside.<br><br>View rolling farmlands, stunning seascapes, tiny villages, bustling harbors and enjoy a stop at a working fishing harbor. Visit Green Gables, the homestead that is featured prominently in Lucy Maud Montgomery\’s book, Anne of Green Gables. Explore the rooms in the house or take a stroll down lover\’s lane. Take in the stunning scenery at the beaches of Prince Edward Island National Park, gazing across the white sandy shore and sapphire blue water to the red sandstone cliffs.<br><br>Enjoy a delicious lobster lunch at the Prince Edward Island Preserve Company, an island landmark. This 1913 butter factory is now a shop showcasing island products, including preserves. Take your time to browse the shop and take in the beautiful gardens before returning to Charlottetown.',
+        duration: '4',
+        cost: 109,
+        photoURL: 'images/sag-excursion1.webp'
+    },
+    {
+        id: 'sag',
+        location: 'Saguenay (La Baie), Québec',
+        title: 'Best of Saguenay',
+        description: 'Enjoy the best of what the Saguenay region has to offer. Your tour begins with a scenic drive through La Baie, where you’ll discover the importance of the Saguenay Fjord – deeply chiseled in the Laurentian Mountains. The Fjord Museum will explain the creation of the fjord and the mysteries it conceals. You’ll pass the Ha! Ha! Pyramid, a monument to the great flood of 1996 that devastated the region and proved to be one of Canada’s greatest natural disasters. Discover the historic old paper mill, a National Historic Site in Canada, once owned by the Compagnie de Pulpe de Chicoutimi. Renovated in 2002, La Pulperie de Chicoutimi offers exhibitions on local history and culture. Your final stop will be to Le Chevrier du Nord, a small family run goat farm that produces goat mohair wool.',
+        duration: '3.5',
+        cost: 139,
+        photoURL: 'images/sag-excursion2.webp'
+    },
+    {
+        id: 'queb',
+        location: 'Québec City, Canada',
+        title: 'Grand Exploration Of Quebec',
+        description: 'On this tour you\'ll experience the best of both the city of Quebec and the surrounding countryside. Perched high above the St. Lawrence River, your tour will include a stop at Dufferin Terrace and Chateau Frontenac, where you\'ll have an opportunity to independently visit the surroundings of the Chateau Frontenac and take in the spectacular view of the St. Lawrence River, Ile d\’Orleans and the Laurentian Mountains from Dufferin Terrace. Passing through the St. Louis Gate, you will explore the National Battlefields Park, site of the historic battle where the French surrendered to the British in 1759. A photo stop will be made at Cap Diamant before continuing to the heart of the lower town and the beautifully restored market square, Place Royale.<br><br>Within minutes of the Old Walled City of Quebec are the beautiful pastoral landscapes of the Island of Orleans and Montmorency Falls. Cascading down a 272-foot cliff, Montmorency Falls is one-and-a-half times as high as Niagara Falls. Take a step back in time as you cross the bridge to the Ile d\'Orleans, where you will enjoy a scenic drive passing the tip of the Island and the lovely 19th-century resort homes of Quebec\'s rich merchant class with spectacular views of the skyline of Quebec. Located along the infamous Beaupre Coast, your journey takes you along the Chemin de Roy (King\'s Road) to the world-renowned shrine of St. Anne de Beaupre. With over one-and-a-half million visitors and pilgrims making their way to the shrine each year, St. Anne has become one of the most important Catholic sites in North America. You\'ll enjoy lunch at a beautiful setting in the countryside of Quebec.',
+        duration: '7.5',
+        cost: 179,
+        photoURL: 'images/queb-excursion1.webp'
+    },
+    {
+        id: 'queb',
+        location: 'Québec City, Canada',
+        title: 'Countryside of Quebec',
+        description: 'Experience the splendor of French Canada\'s countryside as you drive into the foothills of the Laurentian Mountains to the renowned Lake Beauport area. Surrounded by emerald forests, a photo stop will be made to view the beauty of the lake and mountain scenery. Continuing toward the Beaupre Coast a stop will be made at the magnificent Montmorency Falls. Cascading down a 272-foot (83 meter) cliff, Montmorency is one-and-a-half times as high as Niagara Falls. Take a step back in time as you cross the bridge to the Ile d\'Orleans where you\'ll enjoy a scenic drive through the picturesque villages of traditional rural Quebec. Passing the tip of the island, see the lovely 19th-century resort homes of Quebec\'s rich merchant class with spectacular views of the skyline of the city. The Quebec area is well-known for its production of maple syrup therefore, during the tour you\'ll have the opportunity to visit an authentic sugar shack, learn about the production of the maple products and sample the sweet maple taffy.',
+        duration: '4',
+        cost: 109,
+        photoURL: 'images/queb-excursion2.webp'
     }
 ]
 
@@ -233,6 +338,9 @@ function renderExcursionCards(filteredExcursions) {
         excursionGrid.appendChild(card);
         count++;
     });
+
+    // Add the excursion count to end of the text in the span
+    excursionCount.textContent = filteredExcursions.length;
 }
 
 
@@ -244,6 +352,7 @@ const weatherN = document.querySelector('#weatherLink');
 const temp1 = document.querySelector('#temp1');
 const temp2 = document.querySelector('#temp2');
 const precip = document.querySelector('#precip');
+const excursionCount = document.querySelector('.excursionCount');
 
 function createCityProfile(cityID) {
     // Create a new picture element
@@ -296,6 +405,7 @@ const cityElements = document.querySelector(".excursions");
 const headerHomeButton = document.querySelector("#home");
 const nyNav = document.querySelector('#ny');
 const bosNav = document.querySelector('#bos');
+const formPage = document.querySelector('.formPage');
 
 // Reset HTML renders for filtering purposes
 function resetExcursionGrid() { excursionGrid.innerHTML = "" };
@@ -309,6 +419,7 @@ function showHome() {
         cityElements.style.display = "none";
         resetExcursionGrid();
         excursionPage.style.display = 'none';
+        formPage.style.display = 'none';
     }
 }
 
@@ -318,6 +429,9 @@ function hideHome() {
 
     if (homePage.style.display === 'block') {
         homePage.style.display = 'none';
+    }
+    if (formPage.style.display === 'block') {
+        formPage.style.display = 'none';
     }
 }
 
@@ -351,8 +465,24 @@ function loadExcursionsButton() {
             cityElements.style.display = "none";
             showexcursionPageElements();
         });
+
+        renderExcursionCards(excursionList);
     }
 }
+
+// Suggestion Button
+function loadSuggestionButton() {
+    if (document.querySelector('#suggestionButton')) {
+        const suggestButton = document.querySelector('#suggestionButton');
+
+        suggestButton.addEventListener('click', function () {
+            resetExcursionGrid();
+            excursionPage.style.display = 'none';
+            formPage.style.display = 'block';
+        });
+    }
+}
+
 
 function GetExcursionsByID(id) {
     return excursionList.filter(excursion => excursion.id === id);
@@ -382,4 +512,5 @@ document.addEventListener('DOMContentLoaded', function () {
     loadMap();
     configureNav();
     loadExcursionsButton();
+    loadSuggestionButton();
 });
